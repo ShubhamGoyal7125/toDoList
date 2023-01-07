@@ -31,7 +31,12 @@ async function main() {
     name: "Hit checkbox to delete an item.",
   });
 
-  const defaultItems = [item1, item2, item3];
+  const item4 = new Item({
+    name: "You can make your own list by adding your list name in the url.",
+  });
+
+
+  const defaultItems = [item1, item2, item3, item4];
 
   const listSchema = new mongoose.Schema({
     name: String,
@@ -153,6 +158,3 @@ async function main() {
     console.log("Server has started successfully.");
   });
 }
-
-
-// https://fathomless-temple-56504.herokuapp.com/ 
